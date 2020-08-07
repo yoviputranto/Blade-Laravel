@@ -1,7 +1,11 @@
 @extends('adminlte.master')
-
-@section('content')
+@push('styles')
 <link rel="stylesheet" href="{{asset('/adminlte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+<link rel="stylesheet" href="{{asset('/adminlte/plugin/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+    
+@endpush
+@section('content')
+
 <div class="card">
     <div class="card-header">
       <h3 class="card-title">DataTable with default features</h3>
