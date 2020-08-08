@@ -32,3 +32,7 @@ Route::get('/items/create', function () {
 Route::get('/data-tables', function () {
     return view('items.table');
 });
+
+Route::get('/pertanyaan/create', 'PertanyaanController@create');
+
+Route::post('/pertanyaan', 'PertanyaanController@store');
